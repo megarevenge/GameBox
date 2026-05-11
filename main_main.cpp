@@ -1,11 +1,11 @@
-#include "seabattlewindow.h"
+#include "mainwindow.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    SeaBattleWindow w;
+    MainWindow w;
     w.show();
-    return QCoreApplication::exec();
+    return a.exec();
 }
