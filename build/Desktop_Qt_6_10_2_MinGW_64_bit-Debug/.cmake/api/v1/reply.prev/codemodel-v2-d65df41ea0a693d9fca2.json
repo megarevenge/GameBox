@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-a69909eae4d76fd74b9e.json",
+					"jsonFile" : "directory-.-Debug-635a43727cb36384b8c2.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "GameBox::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GameBox-Debug-2a2f10e2c3d4f99003ca.json",
+					"jsonFile" : "target-GameBox-Debug-c13221ac71fd5724f09c.json",
 					"name" : "GameBox",
 					"projectIndex" : 0
 				},
@@ -68,8 +68,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
-		"source" : "C:/Users/HP-1/Documents/GameBox/GameBox"
+		"build" : "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/HP-1/Documents/GameBox"
 	},
 	"version" : 
 	{

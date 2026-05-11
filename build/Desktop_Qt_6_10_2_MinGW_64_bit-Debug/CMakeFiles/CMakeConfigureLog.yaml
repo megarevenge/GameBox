@@ -28,7 +28,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/a.exe
+        C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/a.exe
       
   -
     kind: "try_compile-v1"
@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh"
-      binary: "C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh"
+      source: "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh"
+      binary: "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -50,7 +50,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh'
+        Change Dir: 'C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh'
         
         Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_a4d27
         [1/2] D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_a4d27.dir/CMakeCXXCompilerABI.cpp.obj -c D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
@@ -146,7 +146,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh']
+        ignore line: [Change Dir: 'C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-jclehh']
         ignore line: []
         ignore line: [Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_a4d27]
         ignore line: [[1/2] D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_a4d27.dir/CMakeCXXCompilerABI.cpp.obj -c D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
@@ -348,8 +348,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk"
-      binary: "C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk"
+      source: "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk"
+      binary: "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -359,10 +359,10 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk'
+        Change Dir: 'C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk'
         
         Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_06631
-        [1/2] D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_06631.dir/src.cxx.obj -c C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk/src.cxx
+        [1/2] D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_06631.dir/src.cxx.obj -c C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-fu8lrk/src.cxx
         [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   CMakeFiles/cmTC_06631.dir/src.cxx.obj -o cmTC_06631.exe -Wl,--out-implib,libcmTC_06631.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
@@ -387,8 +387,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru"
-      binary: "C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru"
+      source: "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru"
+      binary: "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -398,10 +398,10 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru'
+        Change Dir: 'C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru'
         
         Run Build Command(s): D:/Qt/Tools/Ninja/ninja.exe -v cmTC_b273e
-        [1/2] D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_b273e.dir/src.cxx.obj -c C:/Users/HP-1/Documents/GameBox/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru/src.cxx
+        [1/2] D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_b273e.dir/src.cxx.obj -c C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/CMakeScratch/TryCompile-swelru/src.cxx
         [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe   CMakeFiles/cmTC_b273e.dir/src.cxx.obj -o cmTC_b273e.exe -Wl,--out-implib,libcmTC_b273e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0

@@ -1,0 +1,10 @@
+# ninja log v6
+8	1594	8002164743948252	build.ninja	40e29d7ca50e5945
+85	3741	8001959497169755	GameBox_autogen/timestamp	6f44f4a0c8973e65
+85	3741	8001959497169755	GameBox_autogen/mocs_compilation.cpp	6f44f4a0c8973e65
+3754	13937	8001959498724131	CMakeFiles/GameBox.dir/GameBox_autogen/mocs_compilation.cpp.obj	248c45e568468236
+14123	14863	8001959602414042	GameBox.exe	cfc0d88016b7fe14
+85	3741	8001959497169755	C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GameBox_autogen/timestamp	6f44f4a0c8973e65
+85	3741	8001959497169755	C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GameBox_autogen/mocs_compilation.cpp	6f44f4a0c8973e65
+3764	14114	8001959498824132	CMakeFiles/GameBox.dir/seabattlewindow.cpp.obj	daf38df27f7098bd
+3759	14122	8001959498774134	CMakeFiles/GameBox.dir/main.cpp.obj	c1c9da5b367343a9

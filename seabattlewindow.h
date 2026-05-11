@@ -19,5 +19,10 @@ public:
 
 private:
     Ui::SeaBattleWindow *ui;
+
+private slots:
+    void on_p1_clicked();
+    void on_p2_clicked();
+    void on_start_clicked();
 };
 #endif // SEABATTLEWINDOW_H

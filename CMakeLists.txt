@@ -23,6 +23,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(GameBox
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        shipselectingwindow.h shipselectingwindow.cpp shipselectingwindow.ui
+        board.h
+        board.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET GameBox APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
