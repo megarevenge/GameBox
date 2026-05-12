@@ -17,6 +17,11 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
+
+private slots:
+    void on_quit_clicked();
+    void on_MineSweeper_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
