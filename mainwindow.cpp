@@ -1,44 +1,33 @@
 #include "mainwindow.h"
-#include "minebutton.h"
+#include "./ui_mainwindow.h"
+#include <QMessageBox>
+#include "minewindow.h"
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
-    QWidget *centralWidget = new QWidget(this); // to center widgets
-    QGridLayout *gridLayout = new QGridLayout(centralWidget); // building layout
-    gridLayout->setSpacing(0);
-
-    for(int r = 0; r < 10; r++){
-        for(int c = 0; c < 10; c++){
-            buttons[r][c] = new MineButton(r, c, this);
-            buttons[r][c]->setFixedSize(40, 40);
-
-            connect(buttons[r][c], &MineButton::leftClicked, this, &MainWindow::handleLeftClick);
-
-
-            connect(buttons[r][c], &MineButton::rightClicked, this, &MainWindow::handleRightClick);
-
-            gridLayout->addWidget(buttons[r][c], r, c);
-        }
-    }
-
-    setCentralWidget(centralWidget);
-    setWindowTitle("Qt Minesweeper");
+    ui->setupUi(this);
 }
 
-void MainWindow::handleLeftClick(int r, int c){
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
 
-    if(buttons[r][c]->text() != "🚩"){
-        buttons[r][c]->setText("");
-        buttons[r][c]->setEnabled(false);
+void MainWindow::on_MineSweeper_clicked(){
+    MineWindow* a = new MineWindow(); // Create the menu
+    a->show();
+    this->hide(); // hide current window
+}
+
+void MainWindow::on_quit_clicked()
+{
+    QMessageBox::StandardButton answer = QMessageBox::question(this,"","Are you sure you want to go out?",
+                          QMessageBox:: No | QMessageBox:: Yes);
+
+    if(answer == QMessageBox::Yes){
+        QApplication::quit();
     }
 }
 
-void MainWindow::handleRightClick(int r, int c){
-    if(buttons[r][c]->text() == "🚩"){
-        buttons[r][c]->setText("");
-    }else{
-        buttons[r][c]->setText("🚩");
-    }
-}
-
-MainWindow::~MainWindow(){}
