@@ -13,32 +13,7 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLCDNumber" name="lcdNumber">
-    <property name="geometry">
-     <rect>
-      <x>333</x>
-      <y>10</y>
-      <width>61</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="digitCount">
-     <number>5</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::SegmentStyle::Flat</enum>
-    </property>
-    <property name="value" stdset="0">
-     <double>20.000000000000000</double>
-    </property>
-   </widget>
-  </widget>
+  <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>

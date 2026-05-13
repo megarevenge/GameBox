@@ -1,20 +1,21 @@
-#ifndef BOARD_H
-#define BOARD_H
-#include "fstream"
+#ifndef SEABOARD_H
+#define SEABOARD_H
+#include <iostream>
 using namespace std;
 //this class is for controlling a board where ships will be placed.
 //the user will save its own board, and it will be used when enemy hits some place on board
-class Board
+class SeaBoard
 {
-private:
+public:
+    //I made its size 10
+    static const int size = 10;
+
+
     //inside cell I will store ships.
     //If there is a ship in a specific cell, its value is 1, if it's not, then it will be 0.
     int cell[size][size];
 
-public:
-    //I made its size 10
-    static const int size = 10;
-    Board();
+    SeaBoard();
 
     //set cell is used when specific button in grid is clicled.
     void setCell(int value, int r, int c);
@@ -26,9 +27,9 @@ public:
     void resetCell();
 
     //save to file is used when user saves its own board to binary file.
-    void saveToFile(fstream &file);
+    void saveToFile(string fileName);
 
     //get from file will return board object from a file to start the game.
-    Board getFromFile(fstream &file);
+    SeaBoard getFromFile(string fileName);
 };
-#endif // BOARD_H
+#endif // SEABOARD_H

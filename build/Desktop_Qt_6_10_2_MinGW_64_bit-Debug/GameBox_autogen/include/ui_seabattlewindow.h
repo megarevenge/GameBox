@@ -12,8 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,24 +21,34 @@ class Ui_SeaBattleWindow
 {
 public:
     QWidget *centralwidget;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
+    QPushButton *p1;
+    QPushButton *p2;
+    QPushButton *start;
 
     void setupUi(QMainWindow *SeaBattleWindow)
     {
         if (SeaBattleWindow->objectName().isEmpty())
             SeaBattleWindow->setObjectName("SeaBattleWindow");
-        SeaBattleWindow->resize(800, 600);
+        SeaBattleWindow->resize(550, 400);
         centralwidget = new QWidget(SeaBattleWindow);
         centralwidget->setObjectName("centralwidget");
+        p1 = new QPushButton(centralwidget);
+        p1->setObjectName("p1");
+        p1->setGeometry(QRect(30, 80, 201, 111));
+        QFont font;
+        font.setPointSize(48);
+        p1->setFont(font);
+        p2 = new QPushButton(centralwidget);
+        p2->setObjectName("p2");
+        p2->setGeometry(QRect(320, 80, 201, 111));
+        p2->setFont(font);
+        start = new QPushButton(centralwidget);
+        start->setObjectName("start");
+        start->setGeometry(QRect(150, 250, 261, 121));
+        QFont font1;
+        font1.setPointSize(72);
+        start->setFont(font1);
         SeaBattleWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(SeaBattleWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 21));
-        SeaBattleWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(SeaBattleWindow);
-        statusbar->setObjectName("statusbar");
-        SeaBattleWindow->setStatusBar(statusbar);
 
         retranslateUi(SeaBattleWindow);
 
@@ -49,6 +58,9 @@ public:
     void retranslateUi(QMainWindow *SeaBattleWindow)
     {
         SeaBattleWindow->setWindowTitle(QCoreApplication::translate("SeaBattleWindow", "SeaBattleWindow", nullptr));
+        p1->setText(QCoreApplication::translate("SeaBattleWindow", "P1", nullptr));
+        p2->setText(QCoreApplication::translate("SeaBattleWindow", "P2", nullptr));
+        start->setText(QCoreApplication::translate("SeaBattleWindow", "START", nullptr));
     } // retranslateUi
 
 };

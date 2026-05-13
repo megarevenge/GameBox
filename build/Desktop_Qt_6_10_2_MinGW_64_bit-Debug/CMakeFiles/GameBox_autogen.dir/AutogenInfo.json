@@ -325,21 +325,21 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/HP-1/Documents/GameBox/board.h",
-			"MU",
-			"EWIEGA46WW/moc_board.cpp",
-			null
-		],
-		[
 			"C:/Users/HP-1/Documents/GameBox/seabattlewindow.h",
 			"MU",
 			"EWIEGA46WW/moc_seabattlewindow.cpp",
 			null
 		],
 		[
-			"C:/Users/HP-1/Documents/GameBox/shipselectingwindow.h",
+			"C:/Users/HP-1/Documents/GameBox/seaboard.h",
 			"MU",
-			"EWIEGA46WW/moc_shipselectingwindow.cpp",
+			"EWIEGA46WW/moc_seaboard.cpp",
+			null
+		],
+		[
+			"C:/Users/HP-1/Documents/GameBox/seashipselectingwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_seashipselectingwindow.cpp",
 			null
 		]
 	],
@@ -415,10 +415,14 @@
 	"SETTINGS_FILE" : "C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/GameBox_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Users/HP-1/Documents/GameBox/board.cpp", "MU", null ],
 		[ "C:/Users/HP-1/Documents/GameBox/main.cpp", "MU", null ],
 		[ "C:/Users/HP-1/Documents/GameBox/seabattlewindow.cpp", "MU", null ],
-		[ "C:/Users/HP-1/Documents/GameBox/shipselectingwindow.cpp", "MU", null ]
+		[ "C:/Users/HP-1/Documents/GameBox/seaboard.cpp", "MU", null ],
+		[
+			"C:/Users/HP-1/Documents/GameBox/seashipselectingwindow.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
