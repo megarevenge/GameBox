@@ -12,26 +12,22 @@ SeaShipSelectingWindow::SeaShipSelectingWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::ShipSelectingWindow)
 {
-    // ui->setupUi(this);
-
-    QVBoxLayout* mainLayout = new QVBoxLayout();
+    ui->setupUi(this);
 
 
     //A labal for available ship count
-    shipCount = new QLabel(this);
-    shipCount->setText("20");
-    shipCount->setStyleSheet("font-size: 20px;");
-    mainLayout->addWidget(shipCount);
+    ui->shipCount->display(15);
 
 
     //Grid for ships
-    QGridLayout *gridLayout = new QGridLayout();
-    gridLayout->setSpacing(2);
+    QGridLayout *gridLayout = new QGridLayout(ui->gridContainer);
+    gridLayout->setSpacing(3);
+    gridLayout->setHorizontalSpacing(3);
 
     for(int r = 0; r < SeaBoard::size; r++) {
         for(int c = 0; c < SeaBoard::size; c++) {
             QPushButton *button = new QPushButton();
-            button->setFixedSize(25, 25);
+            button->setFixedSize(45, 45);
             button->setStyleSheet("background-color: lightblue; border: 1px solid gray;");
 
             connect(button, &QPushButton::clicked, this, [this, r, c]() {
@@ -42,40 +38,18 @@ SeaShipSelectingWindow::SeaShipSelectingWindow(QWidget *parent)
             gridLayout->addWidget(button, r, c);
         }
     }
-
-    QPushButton *saveButton = new QPushButton("Save");
-    saveButton->setFixedHeight(40);
-    connect(saveButton, &QPushButton::clicked, this, &SeaShipSelectingWindow::on_save_clicked);
-
-    QPushButton *resetButton = new QPushButton("Reset");
-    resetButton->setFixedHeight(40);
-    connect(resetButton, &QPushButton::clicked, this, &SeaShipSelectingWindow::on_reset_clicked);
-
-    QHBoxLayout *layoutButtons = new QHBoxLayout();
-
-    layoutButtons->addWidget(saveButton);
-    layoutButtons->addWidget(resetButton);
-
-
-    mainLayout->addLayout(gridLayout);
-    mainLayout->addLayout(layoutButtons);
-
-
-    QWidget* centralWidget = new QWidget(this);
-    centralWidget->setLayout(mainLayout);
-    setCentralWidget(centralWidget);
 }
 
 void SeaShipSelectingWindow::onCellClicked(int r, int c) {
-    int limit = shipCount->text().toInt();
-    if(limit > 0) {
-        int current = board.getCell(r, c);
+    int limit = ui->shipCount->value();
+    int current = board.getCell(r, c);
+    if(limit > 0 || current == 1) {
         board.setCell(current == 0 ? 1 : 0, r, c);
         updateButton(r, c);
         limit = current == 0 ? limit - 1: limit + 1;
-        shipCount->setText(QString::number(limit));
+        ui->shipCount->display(QString::number(limit));
     } else {
-        QMessageBox::warning(this,"Number of Ships", "You have used all your ships.");
+        QMessageBox::warning(this,"", "You have used all your ships.");
     }
 }
 
@@ -88,16 +62,16 @@ void SeaShipSelectingWindow::updateButton(int r, int c) {
 }
 
 void SeaShipSelectingWindow::on_save_clicked() {
-    int limit = shipCount->text().toInt();
+    int limit = ui->shipCount->value();
     if(limit > 0) {
-        QMessageBox::information(this,"Number of Ships", "You still have ships to use.");
+        QMessageBox::information(this,"", "You still have "+ QString::number(limit) +" ships to use.");
     } else {
         try {
             board.saveToFile(fileName);
             QMessageBox::information(this, "Success", "The Board is succesfully saved, your partners turn");
             SeaShipSelectingWindow::hide();
         } catch(QString e) {
-            QMessageBox::critical(this, "File error", "Couldn't save the board to file");
+            QMessageBox::critical(this, "", "Couldn't save the board to file");
         }
     }
 }
@@ -109,7 +83,7 @@ void SeaShipSelectingWindow::on_reset_clicked() {
             updateButton(r, c);
         }
     }
-    shipCount->setText("20");
+    ui->shipCount->display(15);
 }
 
 SeaShipSelectingWindow::~SeaShipSelectingWindow()

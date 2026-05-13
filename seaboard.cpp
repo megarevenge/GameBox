@@ -1,5 +1,7 @@
 #include "seaboard.h"
 #include "fstream"
+#include "ctime"
+#include "cstdlib"
 using namespace std;
 
 SeaBoard::SeaBoard() {
@@ -49,5 +51,18 @@ SeaBoard SeaBoard::getFromFile(string fileName) {
         return a;
     } else {
         throw "Couldn't read from saved file.";
+    }
+}
+
+
+SeaBoard::SeaBoard(int num) {
+    srand(time(0));
+    for(int i = 0; i < num;) {
+        int r = rand()%10;
+        int c = rand()%10;
+        if (getCell(r, c) == 0) {
+            setCell(1, r, c);
+            i++;
+        }
     }
 }

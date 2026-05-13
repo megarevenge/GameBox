@@ -14,9 +14,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-        seabattlewindow.cpp
-        seabattlewindow.h
-        seabattlewindow.ui
+
+
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -26,6 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         seashipselectingwindow.h seashipselectingwindow.cpp shipselectingwindow.ui
         seaboard.h
         seaboard.cpp
+        seagamedesk.h seagamedesk.cpp seagamedesk.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET GameBox APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

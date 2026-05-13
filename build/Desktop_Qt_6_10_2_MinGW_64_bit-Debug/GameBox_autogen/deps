@@ -8,8 +8,6 @@ GameBox_autogen/timestamp: \
 	C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/HP-1/Documents/GameBox/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GameBox_autogen/moc_predefs.h \
 	C:/Users/HP-1/Documents/GameBox/main.cpp \
-	C:/Users/HP-1/Documents/GameBox/seabattlewindow.cpp \
-	C:/Users/HP-1/Documents/GameBox/seabattlewindow.h \
 	C:/Users/HP-1/Documents/GameBox/seaboard.cpp \
 	C:/Users/HP-1/Documents/GameBox/seaboard.h \
 	C:/Users/HP-1/Documents/GameBox/seashipselectingwindow.cpp \
@@ -599,6 +597,5 @@ GameBox_autogen/timestamp: \
 	D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-	C:/Users/HP-1/Documents/GameBox/seabattlewindow.ui \
 	C:/Users/HP-1/Documents/GameBox/shipselectingwindow.ui \
 	D:/Qt/Tools/CMake_64/bin/cmake.exe

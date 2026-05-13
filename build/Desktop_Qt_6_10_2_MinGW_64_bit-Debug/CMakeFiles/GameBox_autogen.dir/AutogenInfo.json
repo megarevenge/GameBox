@@ -325,15 +325,15 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/HP-1/Documents/GameBox/seabattlewindow.h",
-			"MU",
-			"EWIEGA46WW/moc_seabattlewindow.cpp",
-			null
-		],
-		[
 			"C:/Users/HP-1/Documents/GameBox/seaboard.h",
 			"MU",
 			"EWIEGA46WW/moc_seaboard.cpp",
+			null
+		],
+		[
+			"C:/Users/HP-1/Documents/GameBox/seagamedesk.h",
+			"MU",
+			"EWIEGA46WW/moc_seagamedesk.cpp",
 			null
 		],
 		[
@@ -416,8 +416,8 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/HP-1/Documents/GameBox/main.cpp", "MU", null ],
-		[ "C:/Users/HP-1/Documents/GameBox/seabattlewindow.cpp", "MU", null ],
 		[ "C:/Users/HP-1/Documents/GameBox/seaboard.cpp", "MU", null ],
+		[ "C:/Users/HP-1/Documents/GameBox/seagamedesk.cpp", "MU", null ],
 		[
 			"C:/Users/HP-1/Documents/GameBox/seashipselectingwindow.cpp",
 			"MU",

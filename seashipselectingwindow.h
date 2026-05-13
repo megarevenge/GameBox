@@ -30,7 +30,6 @@ private:
     void onCellClicked(int r, int c);
     void updateButton(int r, int c);
 
-    QLabel *shipCount;
 
     QPushButton* grid[SeaBoard::size][SeaBoard::size];
     SeaBoard board;
