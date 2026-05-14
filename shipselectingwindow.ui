@@ -16,6 +16,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(230, 238, 255)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
@@ -53,7 +56,7 @@
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 170, 0)</string>
+        <string notr="true">background-color: #0055ff;color: white</string>
        </property>
        <property name="text">
         <string>Save</string>
@@ -74,7 +77,7 @@
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 0); color: black;</string>
+        <string notr="true">background-color: #0055ff; color: white</string>
        </property>
        <property name="text">
         <string>Reset</string>
@@ -83,19 +86,19 @@
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="frame_of_fame">
+   <widget class="QFrame" name="about">
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>80</y>
+      <y>70</y>
       <width>241</width>
-      <height>301</height>
+      <height>311</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QFrame {
-     background-color: #fffef0;   
-    border: 4px solid #8B7355;   
+     background-color: #80aaff;   
+    border: 4px solid #002266;   
       border-radius: 6px;
     }</string>
     </property>
@@ -105,6 +108,74 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #ffffff; border: none;</string>
+     </property>
+     <property name="text">
+      <string>Welcome To Sea Battle</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> color: #ffffff; border: none;</string>
+     </property>
+     <property name="text">
+      <string>Made by:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>24</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight: bold; color: #ffffff; border: none;</string>
+     </property>
+     <property name="text">
+      <string>CosmosByME</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLCDNumber" name="shipCount">
     <property name="geometry">
@@ -114,6 +185,9 @@
       <width>71</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #6999ff; border-color: #001133</string>
     </property>
     <property name="digitCount">
      <number>2</number>

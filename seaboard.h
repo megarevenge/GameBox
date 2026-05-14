@@ -17,10 +17,14 @@ public:
 
     SeaBoard();
 
-    //set cell is used when specific button in grid is clicled.
+
+    //this constructor is for creating a board with randomly placed ships.
+    SeaBoard(int num);
+
+    //set cell changes the value of the (r,c) element at 2d array.
     void setCell(int value, int r, int c);
 
-    //get cell is used to check if there was a hit
+    //get cell is used to get the value of (r,c)
     int getCell(int r, int c);
 
     //this is used when user wants to clear all the board and start over
@@ -28,8 +32,9 @@ public:
 
     //save to file is used when user saves its own board to binary file.
     void saveToFile(string fileName);
-
-    //get from file will return board object from a file to start the game.
-    SeaBoard getFromFile(string fileName);
 };
+
+//get from file will return board object from a file to start the game.
+SeaBoard getFromFile(string fileName);
+
 #endif // SEABOARD_H

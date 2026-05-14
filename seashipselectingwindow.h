@@ -21,16 +21,19 @@ public:
     string fileName;
 
 private slots:
+    //these are the slots to manipulate the board.
     void on_save_clicked();
     void on_reset_clicked();
 
 private:
     Ui::ShipSelectingWindow *ui;
 
+    //this is for registering users click
     void onCellClicked(int r, int c);
     void updateButton(int r, int c);
 
 
+    //this is board of the user
     QPushButton* grid[SeaBoard::size][SeaBoard::size];
     SeaBoard board;
 };
