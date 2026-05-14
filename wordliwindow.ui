@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WordliWindow</class>
+ <widget class="QMainWindow" name="WordliWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Wordli</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow { background-color: #1e1e1e; }</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+ min-width: 40px;
+ max-width: 60px;
+ min-height: 60px;
+ max-height: 60px;
+ font-size: 18px;
+ font-weight: bold;
+ color: white;
+ border-radius: 8px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </spacer>
+      </item>
+
+      <item>
+       <widget class="QLabel" name="titleLabel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+ font-size: 42px;
+ color: #6699ff;
+ font-weight: 700;
+}</string>
+        </property>
+        <property name="text">
+         <string>WORDLE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="leftSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </spacer>
+      </item>
+
+      <item>
+       <widget class="QWidget" name="gameWidget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>350</width>
+          <height>420</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>420</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+ background-color: #121213;
+ border: 2px solid #3a3a3c;
+ border-radius: 12px;
+}</string>
+        </property>
+
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin"><number>12</number></property>
+         <property name="topMargin"><number>12</number></property>
+         <property name="rightMargin"><number>12</number></property>
+         <property name="bottomMargin"><number>12</number></property>
+         <property name="spacing"><number>8</number></property>
+
+         <item row="0" column="0"><widget class="QLabel" name="cell_0_0"/></item>
+         <item row="0" column="1"><widget class="QLabel" name="cell_0_1"/></item>
+         <item row="0" column="2"><widget class="QLabel" name="cell_0_2"/></item>
+         <item row="0" column="3"><widget class="QLabel" name="cell_0_3"/></item>
+         <item row="0" column="4"><widget class="QLabel" name="cell_0_4"/></item>
+
+         <item row="1" column="0"><widget class="QLabel" name="cell_1_0"/></item>
+         <item row="1" column="1"><widget class="QLabel" name="cell_1_1"/></item>
+         <item row="1" column="2"><widget class="QLabel" name="cell_1_2"/></item>
+         <item row="1" column="3"><widget class="QLabel" name="cell_1_3"/></item>
+         <item row="1" column="4"><widget class="QLabel" name="cell_1_4"/></item>
+
+         <item row="2" column="0"><widget class="QLabel" name="cell_2_0"/></item>
+         <item row="2" column="1"><widget class="QLabel" name="cell_2_1"/></item>
+         <item row="2" column="2"><widget class="QLabel" name="cell_2_2"/></item>
+         <item row="2" column="3"><widget class="QLabel" name="cell_2_3"/></item>
+         <item row="2" column="4"><widget class="QLabel" name="cell_2_4"/></item>
+
+         <item row="3" column="0"><widget class="QLabel" name="cell_3_0"/></item>
+         <item row="3" column="1"><widget class="QLabel" name="cell_3_1"/></item>
+         <item row="3" column="2"><widget class="QLabel" name="cell_3_2"/></item>
+         <item row="3" column="3"><widget class="QLabel" name="cell_3_3"/></item>
+         <item row="3" column="4"><widget class="QLabel" name="cell_3_4"/></item>
+
+         <item row="4" column="0"><widget class="QLabel" name="cell_4_0"/></item>
+         <item row="4" column="1"><widget class="QLabel" name="cell_4_1"/></item>
+         <item row="4" column="2"><widget class="QLabel" name="cell_4_2"/></item>
+         <item row="4" column="3"><widget class="QLabel" name="cell_4_3"/></item>
+         <item row="4" column="4"><widget class="QLabel" name="cell_4_4"/></item>
+
+         <item row="5" column="0"><widget class="QLabel" name="cell_5_0"/></item>
+         <item row="5" column="1"><widget class="QLabel" name="cell_5_1"/></item>
+         <item row="5" column="2"><widget class="QLabel" name="cell_5_2"/></item>
+         <item row="5" column="3"><widget class="QLabel" name="cell_5_3"/></item>
+         <item row="5" column="4"><widget class="QLabel" name="cell_5_4"/></item>
+
+        </layout>
+       </widget>
+      </item>
+
+      <item>
+       <spacer name="rightSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="checkButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+ background-color: #6699ff;
+ color: #1e1e1e;
+ border-radius: 10px;
+ font-weight: 600;
+ padding: 6px;
+}
+QPushButton:hover { background-color: #5a8df0; }
+QPushButton:pressed { background-color: #4f7fe0; }</string>
+      </property>
+      <property name="text">
+       <string>CHECK</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="usedCharsLabel">
+        <property name="text">
+         <string>Used Chars:</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <spacer name="horizontalSpacer_used">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+       </spacer>
+      </item>
+
+      <item>
+       <widget class="QPushButton" name="restartButton">
+        <property name="text">
+         <string>RESTART</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+ min-width: 140px;
+ max-width: 140px;
+ min-height: 60px;
+ max-height: 60px;
+ font-size: 18px;
+ font-weight: bold;
+ color: white;
+ background-color: #538d4e;
+ border-radius: 8px;
+}
+QPushButton:hover { background-color: #6aaa64; }
+QPushButton:pressed { background-color: #3a7a3a; }</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
