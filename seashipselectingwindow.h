@@ -24,6 +24,8 @@ private slots:
     //these are the slots to manipulate the board.
     void on_save_clicked();
     void on_reset_clicked();
+    void on_back_clicked();
+    void on_random_clicked();
 
 private:
     Ui::ShipSelectingWindow *ui;

@@ -1,6 +1,6 @@
 #include "seashipselectingwindow.h"
 #include "ui_shipselectingwindow.h"
-#include "fstream"
+#include "mainwindow.h"
 #include "QVBoxLayout"
 #include "QGridLayout"
 #include "QHBoxLayout"
@@ -14,7 +14,6 @@ SeaShipSelectingWindow::SeaShipSelectingWindow(QWidget *parent)
     , ui(new Ui::ShipSelectingWindow)
 {
     ui->setupUi(this);
-
 
     //A labal for available ship count
     ui->shipCount->display(20);
@@ -95,6 +94,33 @@ void SeaShipSelectingWindow::on_reset_clicked() {
         }
     }
     ui->shipCount->display(20);
+}
+
+void SeaShipSelectingWindow::on_back_clicked(){
+    SeaShipSelectingWindow::hide();
+    MainWindow *gameDesk = new MainWindow(this);
+    gameDesk->show();
+}
+
+//this will help user to quickly build his board
+void SeaShipSelectingWindow::on_random_clicked() {
+    //first we have to clear the board.
+    on_reset_clicked();
+    //then this will places 20 ships
+    for(int i = 0; i < 20;) {
+        //I am using %10, because it will always gives me number between 0 and 9.
+        int r = rand()%10;
+        int c = rand()%10;
+        //If the cell is empty, it will place a ship.
+        //otherwise i won't iterate, and it will again generate new r and c.
+        if (board.getCell(r, c) == 0) {
+            board.setCell(1, r, c);
+            updateButton(r, c);
+            i++;
+        }
+    }
+    //At the end the ship count will be zero.
+    ui->shipCount->display(0);
 }
 
 SeaShipSelectingWindow::~SeaShipSelectingWindow()

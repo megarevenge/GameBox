@@ -6,6 +6,7 @@
 #include "cstdlib"
 #include "QMessageBox"
 #include "seaboard.h"
+#include "mainwindow.h"
 
 SeaGameDesk::SeaGameDesk(QWidget *parent)
     : QMainWindow(parent)
@@ -156,10 +157,14 @@ void SeaGameDesk::checkWin() {
 
     if (playerScore == 20) {
         QMessageBox::information(this, "", "Congratulations, You Won!");
-        QApplication::quit();
+        SeaGameDesk::hide();
+        MainWindow *gameDesk = new MainWindow(this);
+        gameDesk->show();
     } else if (computerScore == 20) {
         QMessageBox::information(this, "", "You Lost! Computer Won!");
-        QApplication::quit();
+        SeaGameDesk::hide();
+        MainWindow *gameDesk = new MainWindow(this);
+        gameDesk->show();
     }
 }
 
