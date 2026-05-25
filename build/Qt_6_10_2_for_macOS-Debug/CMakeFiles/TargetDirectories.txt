@@ -1,0 +1,9 @@
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/Game.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/install.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/Game_autogen_timestamp_deps.dir
+/Users/jahongir/Desktop/Game/build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/Game_autogen.dir

@@ -8,14 +8,15 @@
 using namespace std;
 
 MineGameOver::MineGameOver(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MineGameOver)
+    : QMainWindow(parent),
+    ui(new Ui::MineGameOver)
 {
     ui->setupUi(this);
     this->setFixedSize(800, 600);
     displayRecords();
 }
 
+// displays records including the best and previous records
 void MineGameOver::displayRecords(){
     ifstream inFile("mine_scores.txt");
     int time;
@@ -43,12 +44,14 @@ void MineGameOver::displayRecords(){
     }
 }
 
+// start the game again
 void MineGameOver::on_pushButton_clicked(){
     MineWindow* a = new MineWindow(); // Create the menu
     a->show();
     this->hide(); // hide current window
 }
 
+// back to menu button
 void MineGameOver::on_pushButton_2_clicked(){
     MainWindow* a = new MainWindow(); // Create the menu
     a->show();

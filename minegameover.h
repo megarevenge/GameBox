@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
+#include <QWidget>
 
 namespace Ui {
 class MineGameOver;
@@ -23,6 +24,7 @@ private slots:
 
 private:
     Ui::MineGameOver *ui;
+    QString m_playerNickname;
 };
 
 #endif // MINEGAMEOVER_H

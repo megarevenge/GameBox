@@ -1,6 +1,8 @@
 #ifndef SEABOARD_H
 #define SEABOARD_H
-#include <iostream>
+
+#include <string>
+
 using namespace std;
 //this class is for controlling a board where ships will be placed.
 //the user will save its own board, and it will be used when enemy hits some place on board

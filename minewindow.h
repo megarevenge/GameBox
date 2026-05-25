@@ -10,6 +10,7 @@
 #include <QFile>
 #include <QTextStream>
 #include "minebutton.h"
+#include "scoremanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -34,6 +35,7 @@ private slots:
     void saveRecord(int seconds);
     void calculateNumbers();
     void revealEmpty(int r, int c);
+    void handleBack();
 private:
     MineButton* buttons[10][10]; // board 10x10
 
@@ -47,5 +49,6 @@ private:
     bool gameStarted;
 
     Ui::MineWindow *ui;
+    ScoreManager m_scoreManager;
 };
 #endif // MINEWINDOW_H

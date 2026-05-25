@@ -72,11 +72,10 @@ SeaGameDesk::SeaGameDesk(QWidget *parent)
     }
 }
 
-
 //this is slot for Computer's board, because player will click them.
 void SeaGameDesk::onPlayerClicked(int r, int c) {
     //when it is computer's turn, user can't press them.
-    if (turn%2 == 0) {
+    if (turn%2 == 0 || boardComputer->getCell(r, c) == 2) {
         return;
     }
 
@@ -96,13 +95,12 @@ void SeaGameDesk::onPlayerClicked(int r, int c) {
         //but if user misses, QTimer will run onComputerClicked.
         updateButtonFail(r, c, 2);
         turn++;
-        QTimer::singleShot(1000, this, &SeaGameDesk::onComputerClicked);
+        QTimer::singleShot(300, this, &SeaGameDesk::onComputerClicked);
     }
 
     //At the end of each click, the current boards will be checked.
     checkWin();
 }
-
 
 void SeaGameDesk::onComputerClicked() {
     int r, c;
@@ -121,7 +119,9 @@ void SeaGameDesk::onComputerClicked() {
         updateButtonSuccess(r, c, 1);
         int currentScore = ui->computerScore->value();
         ui->computerScore->display(currentScore + 1);
-        QTimer::singleShot(1000, this, &SeaGameDesk::onComputerClicked);
+        if (ui->computerScore->value() != 20) {
+            QTimer::singleShot(300, this, &SeaGameDesk::onComputerClicked);
+        }
     } else {
         updateButtonFail(r, c, 1);
         turn++;

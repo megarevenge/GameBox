@@ -17,11 +17,10 @@ public:
     explicit SeaGameDesk(QWidget *parent = nullptr);
     ~SeaGameDesk();
 
-private:
-    Ui::SeaGameDesk *ui;
-
+private slots:
     //this is for player's action.
     void onPlayerClicked(int r, int c);
+
     //this is for computer.
     void onComputerClicked();
     //these will change the color of buttons
@@ -31,6 +30,9 @@ private:
     //this is for check, if the game is ended.
     void checkWin();
 
+private:
+
+    Ui::SeaGameDesk *ui;
 
     //this is the board of the player
     QPushButton* gridPlayer[SeaBoard::size][SeaBoard::size];
